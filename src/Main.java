@@ -1,17 +1,18 @@
+import com.iesam.laliga2023.domain.Equipo;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+    Equipo equipo1 = new Equipo(1,"Equipo FC","663 554 215","Al lado del vecino");
+        System.out.println("El codigo del equipo es: "+equipo1.getCodigo());
+        System.out.println("El Nombre del equipo es: "+equipo1.getNombre());
+        System.out.println("El Telefono del equipo es: "+equipo1.getTelefono());
+        System.out.println("LA Direccion del equipo es: "+equipo1.getDireccion());
+    Equipo equipo2 = new Equipo(0,"","","");
+    equipo2.setCodigo(2);
+    equipo2.setNombre("MiEquipo2");
+    equipo2.setTelefono("658 255 687");
+    equipo2.setDireccion("La otra esquina");
     }
 }
